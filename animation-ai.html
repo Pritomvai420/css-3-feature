@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Animation</title>
+    <style>
+        /* কন্টেইনার বক্স স্টাইল */
+        .container {
+            width: 600px;
+            height: 350px;
+            background-color: #4db6ac; /* ছবির মতো টিয়িয়া/আকাশী ব্যাকগ্রাউন্ড */
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #333;
+        }
+
+        /* হলুদ বলের স্টাইল */
+        .ball {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 50%; /* গোল করার জন্য */
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            /* অ্যানিমেশন প্রোপার্টি */
+            animation: moveBall 3s infinite alternate ease-in-out;
+        }
+
+        /* অ্যানিমেশন কী-ফ্রেম (Keyframes) */
+        @keyframes moveBall {
+            0% {
+                left: 20px; /* শুরুর পজিশন */
+            }
+            100% {
+                left: 520px; /* শেষের পজিশন (কন্টেইনারের ডান পাশ) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Explore Animation</h3>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>
