@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable css</title>
+    <style>
+        :root{
+            --primary-color:rgb(232, 30, 243);
+            --secondary-color:blue;
+            --font-size:20px
+
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 300px);
+        }
+        .box p{
+            color: var(--primary-color);
+        }
+        .container{
+            display: grid;
+            gap: 24px;
+            grid-template-columns: 200px calc(100% - 200px - 50px);
+        }
+        .sidebar{
+            background-color: skyblue;
+        }
+        .content{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>My custom propities</h1>
+    <h5>Also community known as css varriable</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, quo et odio repellat quos aperiam nemo cum alias libero, minima eum soluta. Tenetur at, dicta repellendus vero repudiandae optio repellat!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar"> sidebar</div>
+        <div class="content"> content</div>
+    </div>
+    
+</body>
+</html>
